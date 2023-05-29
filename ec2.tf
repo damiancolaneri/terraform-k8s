@@ -1,6 +1,6 @@
 resource "aws_key_pair" "key_pair" {
   key_name   = "key"
-  public_key = file("~/.ssh/ida_rsa.pub")
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 
 data "aws_ami" "amazon-linux-2" {
@@ -44,7 +44,7 @@ resource "aws_instance" "k8s" {
     connection {
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("~/.ssh/ida_rsa")
+      private_key = file("~/.ssh/id_rsa")
       host        = self.public_ip
     }
   }
