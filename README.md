@@ -14,9 +14,9 @@ Esta instancia es para realizar practicas con docker y k8s
 - [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [git](https://git-scm.com/)
 
-Clonar este repositorio
+Clonar este repositorio eingresar en la carpeta
 ```bash
-git clone https://github.com/damiancolaneri/terraform-k8s.git
+git clone https://github.com/damiancolaneri/terraform-k8s.git && cd terraform-k8s
 ```
 
 Configurar nuestras credenciales de AWS, corremos el siguiente comando y pasamos aws_access_key_id y aws_secret_access_key
