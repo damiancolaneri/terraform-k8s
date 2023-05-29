@@ -4,6 +4,7 @@
 - docker
 - minikube
 - kubectl
+- helm
 
 Esta instancia es para realizar practicas con docker y k8s
 #
@@ -23,9 +24,9 @@ Configurar nuestras credenciales de AWS, corremos el siguiente comando y pasamos
 ```bash
 aws configure
 ```
-Creamos nuestras llaves publicas y privadas **solo si no tenemos aun** (damos "enter" en las opciones sin modificarlas)
+Creamos nuestras llaves publicas y privadas
 ```bash
-ssh-keygen -t rsa
+ssh-keygen -t rsa && cp ~/.ssh/id_rsa.pub .
 ```
 👀 **En el archivo dev.tfvars le colocamos un nombre para identificar nuestra instancia**
 
