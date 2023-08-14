@@ -24,7 +24,7 @@ Configurar nuestras credenciales de AWS, corremos el siguiente comando y pasamos
 ```bash
 aws configure
 ```
-Creamos nuestras llaves publicas y privadas
+Creamos nuestras llaves publicas y privadas (dar "enter" a todas las opciones para usar el nombre default y sin contraseña)
 ```bash
 ssh-keygen -t rsa && cp ~/.ssh/id_rsa.pub .
 ```
